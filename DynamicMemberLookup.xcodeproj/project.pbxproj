@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DB75E88B2234FDCD00B9119D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75E88A2234FDCD00B9119D /* main.swift */; };
+		DB75E89522375F8F00B9119D /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75E89422375F8F00B9119D /* Map.swift */; };
+		DB75E8972238B95200B9119D /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75E8962238B95200B9119D /* Localization.swift */; };
+		DB75E8992238B9C300B9119D /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75E8982238B9C300B9119D /* String+Ext.swift */; };
+		DB75E89F2238C6A800B9119D /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75E89E2238C6A800B9119D /* Dictionary+Ext.swift */; };
+		DB75E8A12238D27C00B9119D /* Localization.json in Resources */ = {isa = PBXBuildFile; fileRef = DB75E89D2238C22300B9119D /* Localization.json */; };
+		DB75E8A42238E39100B9119D /* DynamicMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75E8912234FDF500B9119D /* DynamicMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		DB75E8872234FDCD00B9119D /* DynamicMemberLookup */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicMemberLookup; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB75E88A2234FDCD00B9119D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DB75E8912234FDF500B9119D /* DynamicMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicMap.swift; sourceTree = "<group>"; };
+		DB75E89422375F8F00B9119D /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		DB75E8962238B95200B9119D /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		DB75E8982238B9C300B9119D /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		DB75E89D2238C22300B9119D /* Localization.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Localization.json; sourceTree = "<group>"; };
+		DB75E89E2238C6A800B9119D /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +70,22 @@
 			isa = PBXGroup;
 			children = (
 				DB75E88A2234FDCD00B9119D /* main.swift */,
+				DB75E89A2238BE9900B9119D /* Completed */,
+				DB75E89D2238C22300B9119D /* Localization.json */,
 			);
 			path = DynamicMemberLookup;
+			sourceTree = "<group>";
+		};
+		DB75E89A2238BE9900B9119D /* Completed */ = {
+			isa = PBXGroup;
+			children = (
+				DB75E8912234FDF500B9119D /* DynamicMap.swift */,
+				DB75E8962238B95200B9119D /* Localization.swift */,
+				DB75E89422375F8F00B9119D /* Map.swift */,
+				DB75E8982238B9C300B9119D /* String+Ext.swift */,
+				DB75E89E2238C6A800B9119D /* Dictionary+Ext.swift */,
+			);
+			path = Completed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +98,7 @@
 				DB75E8832234FDCD00B9119D /* Sources */,
 				DB75E8842234FDCD00B9119D /* Frameworks */,
 				DB75E8852234FDCD00B9119D /* CopyFiles */,
+				DB75E8A02238D27500B9119D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -114,12 +141,28 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		DB75E8A02238D27500B9119D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB75E8A12238D27C00B9119D /* Localization.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB75E8832234FDCD00B9119D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DB75E88B2234FDCD00B9119D /* main.swift in Sources */,
+				DB75E8A42238E39100B9119D /* DynamicMap.swift in Sources */,
+				DB75E89F2238C6A800B9119D /* Dictionary+Ext.swift in Sources */,
+				DB75E89522375F8F00B9119D /* Map.swift in Sources */,
+				DB75E8972238B95200B9119D /* Localization.swift in Sources */,
+				DB75E8992238B9C300B9119D /* String+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
