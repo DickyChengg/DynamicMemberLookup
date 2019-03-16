@@ -19,11 +19,17 @@ enum Example {
 }
 
 func showExample(of menu: Example) {
-    let example: ExampleDelegate = ObjectMapperExample()
+    let example: ExampleDelegate
+    switch menu {
+    case .localization:
+        example = LocalizationExample()
+    default:
+        example = ObjectMapperExample()
+    }
     example.doSomething()
     example.dumpObject()
     example.printObject()
 }
 
 // Change this one to see the example.
-showExample(of: .objectMapper)
+showExample(of: .localization)

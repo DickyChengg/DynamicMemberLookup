@@ -11,6 +11,21 @@ import Foundation
 final class DynamicMapExample {
     
     init() {
+        
+    }
+}
+
+extension DynamicMapExample: ExampleDelegate {
+    func doSomething() {
+        
+    }
+    
+    func dumpObject() {
+        
+    }
+    
+    func printObject() {
+        
     }
 }
 
