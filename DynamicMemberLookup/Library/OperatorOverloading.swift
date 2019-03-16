@@ -10,6 +10,10 @@ import Foundation
 
 /// Used for convert DynamicMap to any other types.
 public func <=<T>(lhs: inout T, rhs: Any?) {
+    // You can not set lhs to nil,
+    // because lhs is not nullable.
+    let isNil: Bool = rhs is NSNull
+    guard !isNil else { return }
     if let value = rhs as? T {
         lhs = value
     }
@@ -17,7 +21,8 @@ public func <=<T>(lhs: inout T, rhs: Any?) {
 
 /// Used for convert DynamicMap to any other types.
 public func <=<T>(lhs: inout T?, rhs: Any?) {
-    if rhs is NSNull {
+    let isNil: Bool = rhs is NSNull
+    if isNil {
         lhs = nil
         return
     }

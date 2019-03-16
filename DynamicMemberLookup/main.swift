@@ -23,8 +23,10 @@ func showExample(of menu: Example) {
     switch menu {
     case .localization:
         example = LocalizationExample()
-    default:
+    case .objectMapper:
         example = ObjectMapperExample()
+    case .dynamicMap:
+        example = DynamicMapExample()
     }
     example.doSomething()
     example.dumpObject()
@@ -32,4 +34,4 @@ func showExample(of menu: Example) {
 }
 
 // Change this one to see the example.
-showExample(of: .localization)
+showExample(of: .dynamicMap)
