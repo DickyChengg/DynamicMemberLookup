@@ -8,21 +8,14 @@
 
 import Foundation
 
-protocol Mappable {
-    init()
-    init(map: Map)
-}
-
 @dynamicMemberLookup
 final class Map {
     private var json: [String: Any?] = [:]
-    private var shouldIncludeNilValues: Bool = false
     
     init() { }
     
-    init(json: [String: Any?], shouldIncludeNilValues: Bool = false) {
+    init(json: [String: Any?]) {
         self.json = json
-        self.shouldIncludeNilValues = shouldIncludeNilValues
     }
     
     private func _get(_ key: String) -> Any? {
@@ -43,11 +36,6 @@ final class Map {
             return "\(int)"
         }
         return ""
-    }
-    
-    subscript <T: Numeric>(dynamicMember key: String) -> T? {
-        let result = _get(key) as? NSNumber
-        return result as? T
     }
     
     subscript (dynamicMember key: String) -> Int64 {

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB44A640223CC444008C04F3 /* ObjectMapperExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44A63F223CC444008C04F3 /* ObjectMapperExample.swift */; };
+		DB44A643223CC63A008C04F3 /* DynamicProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44A642223CC63A008C04F3 /* DynamicProtocol.swift */; };
+		DB44A645223CC668008C04F3 /* OperatorOverloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44A644223CC668008C04F3 /* OperatorOverloading.swift */; };
+		DB44A647223CC8B5008C04F3 /* LocalizationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44A646223CC8B5008C04F3 /* LocalizationExample.swift */; };
+		DB44A649223CD27C008C04F3 /* DynamicMapExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB44A648223CD27C008C04F3 /* DynamicMapExample.swift */; };
 		DB75E88B2234FDCD00B9119D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75E88A2234FDCD00B9119D /* main.swift */; };
 		DB75E89522375F8F00B9119D /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75E89422375F8F00B9119D /* Map.swift */; };
 		DB75E8972238B95200B9119D /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75E8962238B95200B9119D /* Localization.swift */; };
@@ -29,6 +34,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DB44A63F223CC444008C04F3 /* ObjectMapperExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperExample.swift; sourceTree = "<group>"; };
+		DB44A642223CC63A008C04F3 /* DynamicProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicProtocol.swift; sourceTree = "<group>"; };
+		DB44A644223CC668008C04F3 /* OperatorOverloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorOverloading.swift; sourceTree = "<group>"; };
+		DB44A646223CC8B5008C04F3 /* LocalizationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationExample.swift; sourceTree = "<group>"; };
+		DB44A648223CD27C008C04F3 /* DynamicMapExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicMapExample.swift; sourceTree = "<group>"; };
 		DB75E8872234FDCD00B9119D /* DynamicMemberLookup */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DynamicMemberLookup; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB75E88A2234FDCD00B9119D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		DB75E8912234FDF500B9119D /* DynamicMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicMap.swift; sourceTree = "<group>"; };
@@ -50,6 +60,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB44A63E223CC410008C04F3 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				DB44A646223CC8B5008C04F3 /* LocalizationExample.swift */,
+				DB44A63F223CC444008C04F3 /* ObjectMapperExample.swift */,
+				DB44A648223CD27C008C04F3 /* DynamicMapExample.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		DB44A641223CC5EF008C04F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB75E89E2238C6A800B9119D /* Dictionary+Ext.swift */,
+				DB75E8982238B9C300B9119D /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DB75E87E2234FDCD00B9119D = {
 			isa = PBXGroup;
 			children = (
@@ -69,23 +98,25 @@
 		DB75E8892234FDCD00B9119D /* DynamicMemberLookup */ = {
 			isa = PBXGroup;
 			children = (
-				DB75E88A2234FDCD00B9119D /* main.swift */,
-				DB75E89A2238BE9900B9119D /* Completed */,
 				DB75E89D2238C22300B9119D /* Localization.json */,
+				DB75E88A2234FDCD00B9119D /* main.swift */,
+				DB44A63E223CC410008C04F3 /* Examples */,
+				DB44A641223CC5EF008C04F3 /* Extensions */,
+				DB75E89A2238BE9900B9119D /* Library */,
 			);
 			path = DynamicMemberLookup;
 			sourceTree = "<group>";
 		};
-		DB75E89A2238BE9900B9119D /* Completed */ = {
+		DB75E89A2238BE9900B9119D /* Library */ = {
 			isa = PBXGroup;
 			children = (
 				DB75E8912234FDF500B9119D /* DynamicMap.swift */,
+				DB44A642223CC63A008C04F3 /* DynamicProtocol.swift */,
 				DB75E8962238B95200B9119D /* Localization.swift */,
 				DB75E89422375F8F00B9119D /* Map.swift */,
-				DB75E8982238B9C300B9119D /* String+Ext.swift */,
-				DB75E89E2238C6A800B9119D /* Dictionary+Ext.swift */,
+				DB44A644223CC668008C04F3 /* OperatorOverloading.swift */,
 			);
-			path = Completed;
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,12 +188,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB44A649223CD27C008C04F3 /* DynamicMapExample.swift in Sources */,
 				DB75E88B2234FDCD00B9119D /* main.swift in Sources */,
+				DB44A640223CC444008C04F3 /* ObjectMapperExample.swift in Sources */,
 				DB75E8A42238E39100B9119D /* DynamicMap.swift in Sources */,
+				DB44A647223CC8B5008C04F3 /* LocalizationExample.swift in Sources */,
+				DB44A645223CC668008C04F3 /* OperatorOverloading.swift in Sources */,
 				DB75E89F2238C6A800B9119D /* Dictionary+Ext.swift in Sources */,
 				DB75E89522375F8F00B9119D /* Map.swift in Sources */,
 				DB75E8972238B95200B9119D /* Localization.swift in Sources */,
 				DB75E8992238B9C300B9119D /* String+Ext.swift in Sources */,
+				DB44A643223CC63A008C04F3 /* DynamicProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
