@@ -8,7 +8,7 @@ Dynamic Dictionary
 ----
 
 Swift Dictionary:
-```
+```swift
 var data: [String: Any] = [:]
 data["name"] = "John"
 data["age"] = 10
@@ -21,14 +21,14 @@ print(age)  // optional(10)
 ```
 
 With Dynamic Dictionary:
-```
+```swift
 let data = DynamicMap()
 data.name = "John"
 data.age = 10
 ```
 
 To get the value, you dan do it like this:
-```
+```swift
 let name: String? = data.name
 let age: Int? = data.age
 
@@ -36,7 +36,7 @@ print(name) // optional("John")
 print(age)  // optional(10)
 ```
 or
-```
+```swift
 var name: String?
 var age: Int?
 
@@ -49,7 +49,7 @@ Dynamic Localization
 
 For example if we have a json like this and we want to get the string based on the key,   
 we can do it simply by create an instance of Localization and use it like this:
-```
+```swift
 let json: [String: String] = [
   "title": "Welcome to Dynamic Localization Example."
   "description": "You can use Localization class to load this string."
@@ -67,7 +67,7 @@ print(desc)  // "You can use Localization class to load this string."
 ```
 
 You also can build the string that are combination of string and API response.
-```
+```swift
 let json: [String: String] = [
   "total_fruit": "I have @{total} @{fruit}@{more} in my bag."
 ]
@@ -94,7 +94,7 @@ Json Model Mapper
 ----
 
 For example you have a model class like this and you want to convert the response to this model.
-```
+```swift
 final class User: Mappable {
   var name: String = ""
   var age: Int = 0
