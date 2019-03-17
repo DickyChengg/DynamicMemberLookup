@@ -25,13 +25,13 @@ With Dynamic Dictionary:
 let data = DynamicMap()
 data.name = "John"
 data.age = 10
-
-let name: String? = data.name
-let age: Int? = data.age
 ```
 
 To get the value, you dan do it like this:
 ```
+let name: String? = data.name
+let age: Int? = data.age
+
 print(name) // optional("John")
 print(age)  // optional(10)
 ```
@@ -80,7 +80,7 @@ let fruitName: String = "apple"
 let more: String = total > 1 ? "s" : ""
 
 let totalFruit: String = R.totalApple
-    .set("total", with: total)
+    .set("total", with: "\(total)")
     .set("fruit", with: fruitName)
     .set("more", with: more)
     .value
