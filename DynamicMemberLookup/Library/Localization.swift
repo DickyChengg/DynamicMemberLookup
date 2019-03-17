@@ -29,7 +29,7 @@ final class Localization {
     // Note:
     /// This function are not working in this `Command Line Tools'.
     /// So, for the testing purpose, pass the json when you create
-    /// the instance variable.
+    /// an instance variable.
     private func _loadJson() {
         guard let path = _bundlePath else { return }
         do {
